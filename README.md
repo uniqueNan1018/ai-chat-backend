@@ -42,6 +42,13 @@ pip install flask flask-cors transformers torch
 ```
 - 2. Flaskサーバーの起動
 ```bash
+# ドライブ直下に移動する
+cd C:\Users\sys-temp02\Documents\react-webpack-app
+# 仮想環境を作る
+python -m venv venv 
+# 仮想環境を有効化する
+venv\Scripts\activate
+# サーバー起動
 python app.py
 ```
 起動後、http://localhost:5000 でAPIが使用可能になります。
@@ -58,13 +65,13 @@ Content-Type: application/json
 - 3. リクエストボディの例
 ```json
 {
-  "message": "こんにちは、調子はどう？"
+  "message": "hello"
 }
 ```
 - 4. レスポンスボディの例
 ```json
 {
-  "reply": "こんにちは！元気ですよ。あなたはどうですか？"
+  "reply": "hello, I am fine..."
 }
 ```
 
